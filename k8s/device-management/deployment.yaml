@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-management
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-management
+  template:
+    metadata:
+      labels:
+        app: device-management
+    spec:
+      containers:
+        - name: device-management
+          image: <registry>/smartcity/device-management:latest
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: device-management-config
+            - secretRef:
+                name: device-management-secret

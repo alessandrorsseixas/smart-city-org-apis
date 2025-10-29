@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: energy-monitor
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: energy-monitor
+  template:
+    metadata:
+      labels:
+        app: energy-monitor
+    spec:
+      containers:
+        - name: energy-monitor
+          image: <registry>/smartcity/energy-monitor:latest
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: energy-monitor-config
+            - secretRef:
+                name: energy-monitor-secret

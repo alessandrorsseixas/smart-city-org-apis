@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: device-management-config
+  namespace: default
+data:
+  ConnectionStrings__DefaultConnection: "Server=mysql-service;Database=smartcitydb;User Id=device_user;"
+  Redis__Configuration: "redis:6379"
+  MQTT__Broker: "tcp://mqtt:1883"
+  RabbitMQ__Host: "rabbitmq"
+  RabbitMQ__User: "rabbit_user"
+  Keycloak__Authority: "http://keycloak:8080"
+  Keycloak__Realm: "smartcity"
+  Mongo__Connection: "mongodb://mongo:27017/smartcitydb"
+  Influx__Url: "http://influxdb:8086"
+  Kong__AdminUrl: "http://kong:8001"

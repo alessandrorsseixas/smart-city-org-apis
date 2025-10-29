@@ -5,9 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F126BC11-D170-4E5B-A6B6-804AA274B852}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B353D36D-DDF6-4147-968D-E41A82296A94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartcity.org.apis.device.management", "src\smartcity.org.apis.device.management\smartcity.org.apis.device.management.csproj", "{52A17DB4-3F2B-4824-9867-56D4BBAE9439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartcity.org.apis.devicemanagement", "src\src\smartcity.org.apis.devicemanagement\smartcity.org.apis.devicemanagement.csproj", "{45B99A42-ABA7-47EF-B82F-1505BE49BED6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartcity.org.apis.energy.monitor", "src\smartcity.org.apis.energy.monitor\smartcity.org.apis.energy.monitor.csproj", "{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartcity.org.apis.dashboard.api", "src\smartcity.org.apis.dashboard.api\smartcity.org.apis.dashboard.api.csproj", "{40505675-AFCF-4DA4-A782-411CC99C9CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartcity.org.apis.arch", "src\smartcity.org.apis.arch\smartcity.org.apis.arch.csproj", "{895F8913-4CA8-4305-9B29-1F061376B906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,13 +22,27 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45B99A42-ABA7-47EF-B82F-1505BE49BED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45B99A42-ABA7-47EF-B82F-1505BE49BED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45B99A42-ABA7-47EF-B82F-1505BE49BED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45B99A42-ABA7-47EF-B82F-1505BE49BED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A17DB4-3F2B-4824-9867-56D4BBAE9439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A17DB4-3F2B-4824-9867-56D4BBAE9439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A17DB4-3F2B-4824-9867-56D4BBAE9439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A17DB4-3F2B-4824-9867-56D4BBAE9439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40505675-AFCF-4DA4-A782-411CC99C9CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40505675-AFCF-4DA4-A782-411CC99C9CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40505675-AFCF-4DA4-A782-411CC99C9CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40505675-AFCF-4DA4-A782-411CC99C9CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895F8913-4CA8-4305-9B29-1F061376B906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895F8913-4CA8-4305-9B29-1F061376B906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895F8913-4CA8-4305-9B29-1F061376B906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895F8913-4CA8-4305-9B29-1F061376B906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B353D36D-DDF6-4147-968D-E41A82296A94} = {F126BC11-D170-4E5B-A6B6-804AA274B852}
-		{45B99A42-ABA7-47EF-B82F-1505BE49BED6} = {B353D36D-DDF6-4147-968D-E41A82296A94}
+		{52A17DB4-3F2B-4824-9867-56D4BBAE9439} = {F126BC11-D170-4E5B-A6B6-804AA274B852}
+		{BE605C5D-F3FE-4EC9-821B-B726D47DF6B2} = {F126BC11-D170-4E5B-A6B6-804AA274B852}
+		{40505675-AFCF-4DA4-A782-411CC99C9CED} = {F126BC11-D170-4E5B-A6B6-804AA274B852}
+		{895F8913-4CA8-4305-9B29-1F061376B906} = {F126BC11-D170-4E5B-A6B6-804AA274B852}
 	EndGlobalSection
 EndGlobal
